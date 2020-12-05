@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Quiz</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/quiz.css" />
+</head>
+
+<body>
+	<div id="startPage">
+		<h1>Quiz Challenge</h1>
+		<p>Answer the following code-related questions within the time limit. Keep in mind that incorrect answers will
+			panelize your score/time by 60 seconds</p>
+		<button id="startQuiz" class="btn btn-primary">Start Quiz</button>
+	</div>
+
+	<script type="text/javascript">
+		document.getElementById("startQuiz").onclick = function () {
+			location.href = "html/quiz.html";
+		};
+	</script>
+</body>
+
+</html>

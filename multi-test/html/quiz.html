@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Quiz</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+</head>
+<body>
+	<div id="quiz" class="p-5">
+		<header>
+			<div id="timer"></div>
+		</header>
+		<div id="quizQandA">
+			<p id="question"></p>
+			<div id="options mb-4" class="options">
+				<button id="idButton1" class="classButton px-3"><span id="option1"></span></button>
+				<button id="idButton2" class="classButton px-3"><span id="option2"></span></button>
+				<button id="idButton3" class="classButton px-3"><span id="option3"></span></button>
+				<button id="idButton4" class="classButton px-3"><span id="option4"></span></button>
+			</div>
+		</div>
+		
+		<footer id="quizResult" class="border-top px-3 py-2">
+			Quiz Result
+		</footer>
+	</div>
+	<div id="resultDiv" class="p-5 flex-column justify-center align-items-center">
+		<h1>All Done!</h1>
+		<p id="result"></p>
+		<div>
+			<label>Enter initials: </label>
+			<div class="d-flex">
+				<input id="scoreInput" class="form-control mr-3"/>
+				<button class="btn btn-primary" onclick="saveScore()">Submit</button>
+			</div>
+		</div>
+	</div>
+	<div id="scoresDiv" class="p-5 flex-column justify-center align-items-center">
+		<div>
+			<h1>Highscores</h1>
+			<div id="scorsList"></div>
+			<div>
+				<button id="goBack" class="btn btn-primary">Go Back</button>
+				<button id="clearScore" class="btn btn-danger" onclick="clearScore()">Clear</button>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript"></script>
+	<script src="../js/question.js"></script>
+	<script src="../js/script.js"></script>
+</body>
+</html>
